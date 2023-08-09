@@ -14,30 +14,46 @@ menuIcon.addEventListener("click", () => {
 for (let i = 1; i <= 12; i++) {
   let vidlist = document.createElement("div");
   vidlist.classList.add("video-list");
-  vidlist.innerHTML = `<div class="vid-list">
-  <a href="#">
+  if (i == 1) {
+    vidlist.innerHTML = `<div class="vid-list">
+  <a href="playvideo.html">
     <img src="/img/thumbnail${i}.png" alt="" class="thumbnail1">
   </a>
   <div class="flex-div">
     <img src="/img/Jack1.png">
     <div class="vid-info">
-      <a href="#">Top 10 beautiful places to visit in Nepal</a>
+      <a href="playvideo.html">Top 10 beautiful places to visit in Nepal</a>
       <p>World Adventures</p>
       <p>1M views &bull; 2 days</p>
     </div>
   </div>
 </div>`;
+  }
+  else{
+    vidlist.innerHTML = `<div class="vid-list">
+  <a href="playvideo.html">
+    <img src="/img/thumbnail${i}.png" alt="" class="thumbnail1">
+  </a>
+  <div class="flex-div">
+    <img src="/img/Jack1.png">
+    <div class="vid-info">
+      <a href="playvideo.html">Top 10 beautiful places to visit in Nepal</a>
+      <p>World Adventures</p>
+      <p>1M views &bull; 2 days</p>
+    </div>
+  </div>
+</div>`;
+  }
   listContainer.appendChild(vidlist);
 }
 
 // -----SideBar On Small Screen-----//
-userIcon.addEventListener("click",()=>{
-  const mediaQuery = window.matchMedia('(max-width: 900px)');
-  if(mediaQuery.matches){
+userIcon.addEventListener("click", () => {
+  const mediaQuery = window.matchMedia("(max-width: 900px)");
+  if (mediaQuery.matches) {
     smallSidebar();
   }
-  function smallSidebar(){
+  function smallSidebar() {
     sidebar.classList.toggle("right-sidebar");
   }
-})
-
+});
