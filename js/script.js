@@ -2,6 +2,7 @@ let menuIcon = document.querySelector(".menu-icon");
 let sidebar = document.querySelector(".sidebar");
 let container = document.querySelector(".container");
 let listContainer = document.querySelector(".list-container");
+let userIcon = document.querySelector(".user-icon");
 
 menuIcon.addEventListener("click", () => {
   sidebar.classList.toggle("small-sidebar");
@@ -18,7 +19,7 @@ for (let i = 1; i <= 12; i++) {
     <img src="/img/thumbnail${i}.png" alt="" class="thumbnail1">
   </a>
   <div class="flex-div">
-    <img src="/img/Jack.png">
+    <img src="/img/Jack1.png">
     <div class="vid-info">
       <a href="#">Top 10 beautiful places to visit in Nepal</a>
       <p>World Adventures</p>
@@ -30,4 +31,13 @@ for (let i = 1; i <= 12; i++) {
 }
 
 // -----SideBar On Small Screen-----//
+userIcon.addEventListener("click",()=>{
+  const mediaQuery = window.matchMedia('(max-width: 900px)');
+  if(mediaQuery.matches){
+    smallSidebar();
+  }
+  function smallSidebar(){
+    sidebar.classList.toggle("right-sidebar");
+  }
+})
 

@@ -192,12 +192,22 @@ nav{
         width: 1.8em;
     }
     .nav-middle .search-box input{
-        width: 6em;
+        width: 7em;
     }
     .nav-middle .mic-icon{
          display: none;
     }
-    .logo{
-        width: 5%;
+    .nav-left .logo{
+        width:8em ;
+    }
+    .banner{
+        display: none;
+    }
+    .right-sidebar{
+        display: block;
+        width: 10em;
+        position: fixed;
+        top: 7%;
+        right: 0;
     }
 }
