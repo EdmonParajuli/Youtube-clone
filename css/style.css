@@ -15,15 +15,17 @@ img{
     display: flex;
     align-items: center;
 }
+header{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
 nav{
     /* border: 2px solid ; */
     padding: 1em 2%;
     justify-content: space-between;
     box-shadow: 0 0 1.6em rgba(0, 0, 0, 0.2);
     background-color: #fff;
-    position: sticky;
-    top: 0;
-    z-index: 10;
 }
 .nav-right img{
     width: 1.8em;
@@ -171,6 +173,31 @@ nav{
     display: block;
     margin-bottom: 0.4em;
 }
-.vid-info p{
-
+@media screen and (max-width:900px){
+    .menu-icon{
+        display: none;
+    }
+    .sidebar{
+        display: none;
+    }
+    .container,.large-container{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .nav-right img{
+        display: none;
+    }
+    .nav-right .user-icon{
+        display: block;
+        width: 1.8em;
+    }
+    .nav-middle .search-box input{
+        width: 6em;
+    }
+    .nav-middle .mic-icon{
+         display: none;
+    }
+    .logo{
+        width: 5%;
+    }
 }

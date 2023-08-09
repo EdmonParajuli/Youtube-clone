@@ -28,3 +28,6 @@ for (let i = 1; i <= 12; i++) {
 </div>`;
   listContainer.appendChild(vidlist);
 }
+
+// -----SideBar On Small Screen-----//
+
