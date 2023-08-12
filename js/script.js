@@ -20,7 +20,7 @@ if (listContainer) {
     let vidlist = document.createElement("div");
     vidlist.classList.add("video-list");
     vidlist.innerHTML = `<div class="vid-list">
-  <a href="#">
+  <a href="playvideo.html">
     <img src="/img/thumbnail${i}.png" alt="" class="thumbnail1">
   </a>
   <div class="flex-div">
