@@ -237,8 +237,14 @@ nav{
 .side-video-list{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 2em;
+    margin-bottom: 0.8em;
 }
 .side-video-list img{
     width: 100%;
+}
+.side-video-list .small-thumbnail{
+    flex-basis: 49%;
+}
+.side-video-list .vid-info{
+    flex-basis: 49%;
 }
